@@ -1,0 +1,190 @@
+/* colors */
+
+:root {
+    --text: #1c1b1b;
+    --white: #fbfbfb;
+    --primary: #05E1F5; /* Electric Blue */
+    --secondary: #53788C; /* Payne's Gray */
+    --third: #006E90; /* Cerulean */
+  }
+  
+  /* Typography */
+  
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* Buttons */
+  .btn {
+    filter: drop-shadow(2px 2px 5px #000000);
+    border-radius: 0;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+  }
+  
+  .btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem var(--primary);
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+  }
+  
+  .btn-primary:active {
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+  }
+  
+  .btn-secondary {
+    background-color: var(--secondary);
+    color: var(--white);
+    border-color: var(--secondary);
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--secondary);
+    color: var(--white);
+    border-color: var(--secondary);
+  }
+  
+  .btn-secondary:focus {
+    box-shadow: 0 0 0 0.25rem var(--secondary);
+    background-color: var(--secondary);
+    color: var(--white);
+    border-color: var(--secondary);
+  }
+  
+  .btn-secondary:active {
+    background-color: var(--secondary);
+    color: var(--white);
+    border-color: var(--secondary);
+  }
+  
+  .btn-success {
+    background-color: #41521F; /* Dark moss Green */
+    color: var(--white);
+    border-color: #41521F;
+  }
+  
+  .btn-success:hover {
+    background-color: #41521F; /* Dark moss Green */
+    color: var(--white);
+    border-color: #41521F;
+  }
+  
+  .btn-success:focus {
+    box-shadow: 0 0 0 0.25rem #41521F;
+    background-color: #41521F; /* Dark moss Green */
+    color: var(--white);
+    border-color: #41521F;
+  }
+  
+  .btn-success:active {
+    background-color: #41521F; /* Dark moss Green */
+    color: var(--white);
+    border-color: #41521F;
+  }
+  
+  .btn-danger {
+    background-color: #C01414; /* Engineering Orange */
+    color: var(--white);
+    border-color: #C01414;
+  }
+  
+  .btn-danger:hover {
+    background-color: #C01414; /* Engineering Orange */
+    color: var(--white);
+    border-color: #C01414;
+  }
+  
+  .btn-danger:focus {
+    box-shadow: 0 0 0 0.25rem #C01414;
+    background-color: #C01414; /* Engineering Orange */
+    color: var(--white);
+    border-color: #C01414;
+  }
+  
+  .btn-danger:active {
+    background-color: #C01414; /* Engineering Orange */
+    color: var(--white);
+    border-color: #C01414;
+  }
+  
+  .btn-warning {
+    background-color: #D1AC00; /* Gold Metallic */
+    color: var(--white);
+    border-color: #D1AC00;
+  }
+  
+  .btn-warning:hover {
+    background-color: #D1AC00; /* Gold Metallic */
+    color: var(--white);
+    border-color: #D1AC00;
+  }
+  
+  .btn-warning:focus {
+    box-shadow: 0 0 0 0.25rem #D1AC00;
+    background-color: #D1AC00; /* Gold Metallic */
+    color: var(--white);
+    border-color: #D1AC00;
+  }
+  
+  .btn-warning:active {
+    background-color: #D1AC00; /* Gold Metallic */
+    color: var(--white);
+    border-color: #D1AC00;
+  }
+  
+  .btn-info {
+    background-color: #006E90; /* Cerulean */
+    color: var(--white);
+    border-color: #006E90;
+  }
+  
+  .btn-info:hover {
+    background-color: #006E90; /* Cerulean */
+    color: var(--white);
+    border-color: #006E90;
+  }
+  
+  .btn-info:focus {
+    box-shadow: 0 0 0 0.25rem #006E90;
+    background-color: #006E90; /* Cerulean */
+    color: var(--white);
+    border-color: #006E90;
+  }
+  
+  .btn-info:active {
+    background-color: #006E90; /* Cerulean */
+    color: var(--white);
+    border-color: #006E90;
+  }
+  
