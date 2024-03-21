@@ -1,1 +1,88 @@
+/* Typography */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+/* Colors */
+:root {
+  --primary-1: #FF6F61; /* Coral Red */
+  --primary-2: #76D7C4; /* Light Sea Green */
+  --primary-3: #FFD700; /* Gold */
+}
+
+/* Secondary Colors */
+:root {
+  --secondary-1: #3498DB; /* Sky Blue */
+  --secondary-2: #F39C12; /* Sunflower */
+  --secondary-3: #9B59B6; /* Amethyst */
+}
+
+/* Buttons */
+.small-btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: var(--primary-1);
+  color: #fff;
+  font-size: 14px;
+}
+
+.medium-btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  background-color: var(--primary-2);
+  color: #fff;
+  font-size: 16px;
+}
+
+.large-btn {
+  padding: 16px 32px;
+  border-radius: 8px;
+  background-color: var(--primary-3);
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Cards */
+.card {
+  margin: 20px;
+  width: 300px;
+}
+
+/* Alerts */
+.alert {
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* Carousel */
+.carousel {
+  margin-top: 20px;
+}
+
+/* Navigation */
+.navbar {
+  margin-bottom: 20px;
+}
 
