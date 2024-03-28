@@ -1,88 +1,154 @@
-/* Typography */
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 36px;
+/* Defined Colors */
+:root {
+  --violet: #8e4bfa;
+  --blue: #1379c4;
+  --purple: #c137a2;
+  --error: #d60040;
+  --success: #008744;
+  --warning: #ff600a;
+  --primary-font: "Montserrat", sans-serif;
 }
 
-h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
+/* Custom Typography */
+body {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #000;
+  margin: 0; /* Remove default margin */
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
-h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-}
-
+h1,
+h2,
+h3,
 h4 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-family: var(--primary-font);
+  font-weight: 500;
 }
 
-p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+/* Header */
+
+.carousel-item {
+  height: 50vh; /* 50% of the viewport height */
+  position: relative; /* Ensure proper positioning */
 }
 
-/* Colors */
-:root {
-  --primary-1: #FF6F61; /* Coral Red */
-  --primary-2: #76D7C4; /* Light Sea Green */
-  --primary-3: #FFD700; /* Gold */
+.carousel-item::before {
+  content: ""; /* Create pseudo-element for overlay */
+  position: absolute; /* Position the overlay */
+  top: 0; /* Align to the top of the carousel item */
+  left: 0; /* Align to the left of the carousel item */
+  width: 100%; /* Take the full width of the carousel item */
+  height: 100%; /* Take the full height of the carousel item */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1; /* Ensure the overlay appears above the image */
 }
 
-/* Secondary Colors */
-:root {
-  --secondary-1: #3498DB; /* Sky Blue */
-  --secondary-2: #F39C12; /* Sunflower */
-  --secondary-3: #9B59B6; /* Amethyst */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  padding: 0px;
+  text-align: left;
+  max-width: 35%;
 }
 
-/* Buttons */
-.small-btn {
-  padding: 8px 16px;
-  border-radius: 4px;
-  background-color: var(--primary-1);
-  color: #fff;
-  font-size: 14px;
-}
-
-.medium-btn {
-  padding: 12px 24px;
-  border-radius: 6px;
-  background-color: var(--primary-2);
-  color: #fff;
-  font-size: 16px;
-}
-
-.large-btn {
-  padding: 16px 32px;
-  border-radius: 8px;
-  background-color: var(--primary-3);
-  color: #fff;
-  font-size: 20px;
-}
-
-/* Cards */
+/* Custom Cards */
 .card {
-  margin: 20px;
-  width: 300px;
+  background-color: #f8f9fa; /* Background color for the cards */
 }
 
-/* Alerts */
-.alert {
-  padding: 15px;
-  margin: 10px;
-  border-radius: 5px;
+.card-img-top {
+  max-height: 100%; /* Max height for images within cards */
 }
 
-/* Carousel */
-.carousel {
-  margin-top: 20px;
+.custom-tall {
+  grid-row: span 2; /* Takes up 2 rows in the grid */
 }
 
-/* Navigation */
+.custom-medium {
+  grid-row: span 1;
+  height: auto; /* Auto height for the medium-sized card */
+}
+
+.custom-short {
+  height: auto; /* Auto height for the shorter card */
+}
+
+/* Additional styling for Masonry layout */
+.masonry {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 15px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Alert Colors*/
+.successful {
+  background-color: var(--success);
+  color: #fff;
+}
+
+.info {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+.warning {
+  background-color: var(--warning);
+  color: #fff;
+}
+
+.danger {
+  background-color: var(--error);
+  color: #fff;
+}
+
+.alert-design {
+  border: 0px;
+}
+
+.view-more {
+  background-color: var(--violet);
+  color: #fff;
+  border: none;
+}
+
+.view-more:hover {
+  background-color: var(--purple);
+}
+
 .navbar {
-  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Translucent black background */
 }
 
+  .col {
+    color: #fff;
+    padding: 10px;
+    border: 1px solid transparent; /* Hide default border */
+    border-radius: 5px; /* Add rounded corners to all columns */
+    box-sizing: border-box; /* Ensure padding doesn't increase width */
+  }
+  .container.no-padding {
+    padding: 0; /* Remove padding for this specific container */
+  }
+  .container.no-padding .col {
+    margin-right: 20px; /* Add spacing between columns */
+    margin-bottom: 10px; /* Add spacing between rows */
+  }
+  .violet { background-color: var(--violet); }
+  .purple { background-color: var(--purple); }
+  .blue { background-color: var(--blue); }
+  .red { background-color: var(--error); }
+  .orange { background-color: var(--warning); }
+  .green { background-color: var(--success); }
+
+  .alert-text{
+    color:#fff;
+  }
